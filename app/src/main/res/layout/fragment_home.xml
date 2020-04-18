@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    tools:context=".HomeFragment">
+
+    <EditText
+        android:id="@+id/txt_border"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border_name"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="   Hi, Petugas"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_logout_apk"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:background="@drawable/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_masyarakat"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/img_profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_border" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/name_petugas"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@id/img_masyarakat"
+        app:layout_constraintStart_toStartOf="@id/img_masyarakat"
+        app:layout_constraintTop_toBottomOf="@id/img_masyarakat" />
+
+    <TextView
+        android:id="@+id/txt_respon_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/number_report"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintBottom_toTopOf="@id/txt_report"
+        app:layout_constraintEnd_toEndOf="@id/txt_report"
+        app:layout_constraintStart_toStartOf="@id/txt_report" />
+
+
+    <TextView
+        android:id="@+id/txt_respon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_105sdp"
+        android:layout_marginEnd="@dimen/_200sdp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="R E S P O N"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@id/img_masyarakat"
+        app:layout_constraintStart_toStartOf="@id/img_masyarakat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_report_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/number_respon"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintBottom_toTopOf="@id/txt_respon"
+        app:layout_constraintEnd_toEndOf="@id/txt_respon"
+        app:layout_constraintStart_toStartOf="@id/txt_respon" />
+
+    <TextView
+        android:id="@+id/txt_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_105sdp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="R E P O R T"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@id/img_masyarakat"
+        app:layout_constraintStart_toStartOf="@id/img_masyarakat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll_all_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_name">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_report"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_image"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/img_report"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/img_report_process"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txt_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_nickname_user"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toEndOf="@id/layout_image"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_report_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsregular"
+                        android:maxWidth="@dimen/_160sdp"
+                        android:text="@string/text_report_process"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintTop_toBottomOf="@id/txt_nickname"
+                        app:layout_constraintStart_toEndOf="@id/layout_image" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/txt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verified"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/card_report"
+                app:layout_constraintEnd_toEndOf="@id/card_report"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_report_2"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_send">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_image_2"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/img_report_2"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/img_report_process"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txt_nickname_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_nickname_user"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_2"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_report_send_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsregular"
+                        android:maxWidth="@dimen/_160sdp"
+                        android:text="@string/text_report_process"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintTop_toBottomOf="@id/txt_nickname_2"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_send_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verified"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/card_report_2"
+                app:layout_constraintEnd_toEndOf="@id/card_report_2"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_report_3"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_send_2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_image_3"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/img_report_3"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/img_report_process"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txt_nickname_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_nickname_user"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_3"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_report_send_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsregular"
+                        android:maxWidth="@dimen/_160sdp"
+                        android:text="@string/text_report_process"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintTop_toBottomOf="@id/txt_nickname_3"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_3" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_send_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verified"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/card_report_3"
+                app:layout_constraintEnd_toEndOf="@id/card_report_3"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_report_4"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_send_3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_image_4"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/img_report_4"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/img_report_process"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txt_nickname_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_nickname_user"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_4"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_report_send_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsregular"
+                        android:maxWidth="@dimen/_160sdp"
+                        android:text="@string/text_report_process"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintTop_toBottomOf="@id/txt_nickname_4"
+                        app:layout_constraintStart_toEndOf="@id/layout_image_4" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_send_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verified"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/card_report_4"
+                app:layout_constraintEnd_toEndOf="@id/card_report_4"/>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

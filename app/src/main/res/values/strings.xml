@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">UjikomPwpbPetugas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_petugas">Rifky Zikriansyah Budiman</string>
+    <string name="number_report">19</string>
+    <string name="number_respon">8</string>
+    <string name="title_splash">COMMUNITY REPORT</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="let_s_start_by_getting_your_account_setup">Let’s start by getting your account setup</string>
+    <string name="txt_login">Login</string>
+    <string name="you_have_account">You have account ?</string>
+    <string name="nik">NIK *</string>
+    <string name="name">Name *</string>
+    <string name="phone">Phone Number *</string>
+    <string name="username">Username *</string>
+    <string name="password">Password *</string>
+    <string name="confirm_password">Confirm Password *</string>
+    <string name="level">Level *</string>
+    <string name="admin">Admin</string>
+    <string name="petugas">Petugas</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="txt_phone_number">081224889238</string>
+    <string name="id_card">ID Card</string>
+    <string name="txt_id_card_number">202001</string>
+    <string name="report_not_verified">Report Not Verified</string>
+    <string name="txt_not_verified_number">10</string>
+    <string name="report_success">Report Success</string>
+    <string name="txt_number_clear">6</string>
+    <string name="report_process">Report Process</string>
+    <string name="txt_number_process">2</string>
+    <string name="txt_user">zikriansyah</string>
+    <string name="txt_username_nick">Username</string>
+    <string name="txt_nickname_user">rifkyzb</string>
+    <string name="text_report_process">Maaf, Stasiun Bekasi ada beberapa alat yang tak layak untuk dipakai karena sudah rusak</string>
+    <string name="answer_process">Terimakasih atas laporannya, kami kaan segera mengatasi masalah tersebut</string>
+    <string name="verified">Verified</string>
+    <string name="txt_report_clear">Didekat stasiun cawang ada sebuah perlintasan kereta namun tidak ada penutupnya itu snagat membahyakan</string>
+    <string name="txt_answer_clear">Laporan anda sudah kami kerjakan, terima kasih atas laporannya</string>
+    <string name="email">Email *</string>
+
+
+</resources>

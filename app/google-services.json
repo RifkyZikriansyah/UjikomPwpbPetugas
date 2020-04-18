@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "960913475806",
+    "firebase_url": "https://ujikompwpbpetugas.firebaseio.com",
+    "project_id": "ujikompwpbpetugas",
+    "storage_bucket": "ujikompwpbpetugas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960913475806:android:c66ea8084fbba3b72d1a4f",
+        "android_client_info": {
+          "package_name": "com.example.ujikompwpbpetugas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960913475806-13spt3jdlobejch386k3391mh4dc9g7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ujikompwpbpetugas",
+            "certificate_hash": "4f85687f1a2c0e3bfea701d7fa4d2fdb99d6d791"
+          }
+        },
+        {
+          "client_id": "960913475806-v0h843v7nc1k9vt74q9okqssotiue4no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbXGxAWyx7Zud_UC2LM4UT6VHHtOr5b6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960913475806-v0h843v7nc1k9vt74q9okqssotiue4no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
