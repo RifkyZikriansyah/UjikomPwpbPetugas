@@ -54,7 +54,7 @@
                 android:background="@drawable/text_field_login"
                 android:fontFamily="@font/poppinsmedium"
                 android:hint="   Email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:textColor="@color/colorWhite"
                 android:textColorHint="@color/colorWhite"
                 android:textSize="@dimen/_12ssp"
